@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique</title>
+  <link rel="shortcut icon" href="coffee_bean.png" type="image/x-icon">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Header + Navigation -->
+  <header class="navbar">
+        
+    <!-- Logo with link to Home -->
+    <a href="index.html">
+      <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+    </a>
+
+    <!-- HAMBURGER BUTTON (paste inside .navbar, after the logo) -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="coffeeselection.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="event.html" >Events</a></li>
+        <li><a href="offer.html">Offers</a></li>
+        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Pop Up Box-->
+    <div id="pop" class="pop">
+      <div class="pop_content" id="popContent" >
+
+        <span class="close_button">&times;</span>
+
+        <img src="logo.png" alt="website logo" class="logo"/>
+
+        <h3>Welcome to Bean Boutique!</h3>
+        <p>Sign up now and get 10% off your first purchase!</p>
+        <input type="email" id="signupEmail" placeholder="Enter your email">
+
+        <!-- reCAPTCHA box -->
+        <div>
+          <div class="recaptcha-box" id="recaptcha-box">
+            <div class="recaptcha-checkbox" id="recaptcha-checkbox">
+              <div class="spinner"></div>
+              <svg class="checkmark" viewBox="0 0 20 20">
+                <polyline points="4,10 8,14 16,6" stroke="currentColor" stroke-width="2" fill="none" />
+              </svg>
+            </div>
+            <span class="recaptcha-label">I'm not a robot</span>
+            <div class="recaptcha-logo"></div>
+          </div>
+          <div class="recaptcha-brand">reCAPTCHA &nbsp; Privacy - Terms</div>
+        </div>
+
+        <button type="submit">Sign Up</button>
+        <!-- <p>By signing up, you agree to our <a href="#">Privacy Policy</a>.</p> -->
+
+        <!-- Inline message area (for success/error). aria-live so screen readers announce changes -->
+        <p id="signupMessage" role="status" aria-live="polite" style="margin-top:8px"></p>
+      </div>
+    </div>
+
+    <section>
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+
+        <div class="slide fade">
+          <img src="slideshow_photo3.png" alt="Making Coffee">
+          <div class="caption">
+            <h3>Brewed to Perfection</h3>
+            <h3>Served with Love</h3>
+            <a href="coffeeselection.html">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="slideshow_photo1.png" alt="Coffee Beans">
+        </div>
+
+        <div class="slide fade">
+          <img src="slideshow_photo2.png" alt="People Enjoying Coffee">
+        </div>
+
+        <div class="slide fade">
+          <img src="slideshow_photo4.png" alt="Barista Making Coffee">
+        </div>
+
+        <div class="slide fade">
+          <img src="slideshow_photo5.png" alt="Brewing Equipment">
+          <div class="caption">
+            <h3>Make Your Own Coffee</h3>
+            <a href="equipment.html">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dots_container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+
+    <div id="intro">
+      <h2>Explore Our Products!</h2>
+    </div>
+
+    <!-- Product Preview -->
+    <section class="products_container">
+      <div class="item_container">
+        <img src="Arabica.png" alt="Arabica coffee bean">
+        <h3>Arabica</h3>
+      </div>
+
+      <div class="item_container">
+        <img src="french_press.png" alt="French press">
+        <h3>French Press</h3>
+      </div>
+
+      <div class="item_container">
+        <img src="Robusta.png" alt="Liberica coffee bean">
+        <h3>Robusta</h3>
+      </div>
+
+      <div class="item_container">
+        <img src="barista_pro_rm_bg.png" alt="Liberica coffee bean">
+        <h3>Barista Pro</h3>
+      </div>
+
+      <div class="item_container">
+        <img src="Excelsa.png" alt="Liberica coffee bean">
+        <h3>Excelsa</h3>
+      </div>
+    </section>
+
+    <!-- Order Now Button -->
+    <div class="intro_link">
+      <a href="coffeeselection.html">Order Now</a>
+    </div>
+
+    <!-- Why choose us -->
+    <h2>WHY CHOOSE US?</h2>
+    <section class="about_us">
+      <div class="service_card">
+        <i class="fa-solid fa-mug-saucer"></i>
+        <h4>Quality</h4>
+        <p>Single-origin and speciality-grade beans, roasted to order for peak freshness.</p>
+      </div>
+
+      <div class="service_card">
+        <i class="fa-solid fa-handshake"></i>
+        <h4>Expertise</h4>
+        <p>Decades of experience in sourcing, roasting, and brewing the perfect cup.</p>
+      </div>
+
+      <div class="service_card">
+        <i class="fa-solid fa-truck"></i>
+        <h4>Delivery</h4>
+        <p>Fresh coffee delivered to your doorstep quickly and reliably</p>
+      </div>
+
+    </section>
+
+
+    <!-- Events Preview -->
+    <h2>UPCOMING EVENTS</h2>
+    <section class="upcoming_events">
+
+      <!-- Event Card 1 -->
+      <div class="event_div">
+        <img src="coffee_tasting.png" alt="Coffee Tasting" />
+
+        <div class="event_info">
+          <h3>Coffee Tasting Workshop</h3>
+          <p>Date: DEC 20th</p>
+
+          <div class="more_details_div">
+            <a href="event.html">More Details</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event_div">
+        <img src="brewing_class.png" alt="Free Brewing Class" />
+
+        <div class="event_info">
+          <h3>Free Brewing Class</h3>
+          <p>Date: FEB 14th</p>
+
+          <div class="more_details_div">
+            <a href="event.html">More Details</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <h2>What Our Customers Say...</h2>
+
+    <div class="customer_reviews">
+      <!-- Review Cards -->
+        <div class="review_card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>"The best coffee shop in town!</p>
+          <p>The ambiance is perfect for both work and relaxation."</p>
+          <span><b>- Alex P. -</b></span><br>
+        </div>
+
+          <div class="review_card">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>"I love their selection of single-origin beans. Every cup is a new adventure!"</p>
+            <span><b>- Maria S. -</b></span><br>
+
+          </div>
+
+          <div class="review_card">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>"The baristas are incredibly knowledgeable and friendly.</p>
+            <p>Highly recommend the latte art workshop!"</p>
+            <span><b>- John D. -</b></span><br>
+
+          </div>
+    </div>
+
+    <!-- Success Popup after sign up-->
+    <div id="successPop" class="pop">
+      <div class="pop_content">
+        <span class="close_button">&times;</span>
+        <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+        <h3>🎉 Thank You for Signing Up!</h3>
+        <p>You’ve successfully subscribed and earned a <strong>10% discount</strong> on your first purchase.</p>
+        <button id="closeSuccessBtn">Close</button>
+      </div>
+    </div>
+
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer_container">
+      <div>
+        <a href="index.html">
+          <img src="logo1.png" alt="Bean Boutique Logo" class="logo">
+        </a>
+        
+        <!-- About Bean Boutique -->
+        <p>Since 2006</p>
+        <p>High quality beans, expert roasting, luxury taste.</p>
+        <p>Follow us on:</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="equipment.html">Brewing Equipments</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="offer.html">Special Offers</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Coffee St, Caffeine City, CA 12345<br></p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa-regular fa-envelope"></i> Email: cafe@beanboutique.com</p>
+      </div>
+
+      <div>
+        <!-- Google Map -->
+        <h3>How to find us:</h3>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.388989242893!2d77.21894832088265!3d28.633699314132947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdf5978f867d%3A0x33516f1667b6c62e!2sBean%20Boutique!5e0!3m2!1sen!2smm!4v1759051146571!5m2!1sen!2smm"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Load JavaScript -->
+  <script src="home.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

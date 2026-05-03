@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="shortcut icon" href="coffee_bean.png" type="image/x-icon">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header + Navigation -->
+  <header class="navbar">
+    <!-- Logo with link to Home -->
+    <a href="index.html">
+      <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+    </a>
+
+    <!-- HAMBURGER BUTTON (paste inside .navbar, after the logo) -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffeeselection.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="#" class="active">Events</a></li>
+        <li><a href="offer.html">Offers</a></li>
+        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Events & Community Section -->
+    <section class="event_section">
+      <div>
+        <h2 class="main_header">Events & Workshops</h2>
+        <p class="main_p">Join us for exclusive coffee experiences and luxury gatherings</p>
+      </div>
+
+      <!-- Event Card 1 -->
+      <div class="event_div">
+        <img src="coffee_tasting.png" alt="Coffee Tasting image" />
+        <div class="event-info">
+          <h2>Coffee Tasting Workshop</h2>
+          <p><b>Date:</b> DEC 20th </p>
+          <p><b>Time:</b> 1 PM</p>
+          <p><i class="fa-solid fa-location-dot"></i> 123 Brew St, Coffee City, CA 90210</p>
+
+          <p>Learn to identify flavor notes.</p>
+          <p>Feel the value of coffee.</p>
+          <div class="register_button_div">
+            <a href="#">Register Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event_div">
+        <img src="brewing_class.png" alt="Free Brewing Class image" />
+        <div class="event-info">
+          <h2>Free Brewing Class</h2>
+          <p><b>Date:</b> JAN 14th</p>
+          <p><b>Time:</b> 3 PM</p>
+          <p><i class="fa-solid fa-location-dot"></i> 123 Brew St, Coffee City, CA 90211</p>
+
+          <p>Master the art of brewing with expert tips.</p>
+          <p>Make friends, Share ideas.</p>
+          <div class="register_button_div">
+            <a href="#">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous Events -->
+    
+    <section>
+      <h2 class="main_header">Previous Events</h2>
+      <p class="main_p">A glimpse into our past events and community gatherings</p>
+
+      <div class="previous_div">
+        <div class="previous_event">
+          <img src="latte_art_competition.png" alt="Latte Art Competition image">
+          <h2>Latte Art Competition</h2>
+          <p><b>Date:</b> SEP 9</p>
+        </div>
+
+        <div class="previous_event">
+          <img src="barista_making_coffee.png" alt="Barista Training image">
+          <h2>Barista Training</h2>
+          <p><b>Date:</b> OCT 31</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <div id="register_form_container" class="form_container">
+      <div class="form_content">
+        <span class="close">&times;</span>
+
+        <form class="register_form" id="registerForm">
+          <h2 id="regForm" class="form_header">Registration Form</h2>
+          <p class="form_p">Please fill in this form to join our events!</p>
+          <hr>
+
+          <label for="firstname">First Name</label>
+          <input type="text" placeholder="Enter your first name" name="firstname" id="firstname" required>
+
+          <label for="lastname">Last Name</label>
+          <input type="text" placeholder="Enter your last name" name="lastname" id="lastname" required>
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email" name="email" id="email" required>
+
+          <label for="number">Contact</label>
+          <input type="tel" placeholder="Enter your number" name="number" id="number" required>
+
+          <div class="actions">
+            <button type="button" class="clearbtn">Clear</button>
+            <button type="submit" class="registerbtn">Submit</button>
+          </div>
+        </form>
+
+        <!-- Hidden confirmation message -->
+        <div id="confirmationMessage" class="success_message">
+          <h2>Thank you for registering!</h2>
+          <p>We have received your information. See you at the event!</p>
+        </div>
+
+      </div>
+    </div>
+        <script src="event.js"></script>
+        <script src="script.js"></script>
+    </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer_container">
+      <div>
+        <a href="index.html">
+          <img src="logo1.png" alt="Bean Boutique Logo" class="logo">
+        </a>
+        <p>Since 2006</p>
+        <p>High quality beans, expert roasting, luxury taste.</p>
+        <p><b>Follow us on:</b></p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="equipment.html">Brewing Equipments</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="offer.html">Special Offers</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Coffee St, Caffeine City, CA 12345<br></p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa-regular fa-envelope"></i> Email: cafe@beanboutique.com </p>
+      </div>
+
+      <div>
+        <h3>How to find us:</h3>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.388989242893!2d77.21894832088265!3d28.633699314132947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdf5978f867d%3A0x33516f1667b6c62e!2sBean%20Boutique!5e0!3m2!1sen!2smm!4v1759051146571!5m2!1sen!2smm"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+    
+</body>
+</html>

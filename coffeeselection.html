@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="shortcut icon" href="coffee_bean.png" type="image/x-icon">
+    <link rel="stylesheet" href="coffee_selection.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="home.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Header + Navigation -->
+  <header class="navbar">
+      
+      <!-- Logo with link to Home -->
+      <a href="index.html" >
+        <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+      </a>
+
+      <!-- HAMBURGER BUTTON (paste inside .navbar, after the logo) -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="main-nav">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li><a href="#" class="active">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="offer.html">Offers</a></li>
+          <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Animated Search Bar -->
+  <div class="search_bar_container active">
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+        alt="magnifier"
+        class="magnifier"
+      />
+      <input type="text" class="input" placeholder="Search ..." />
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+        alt="mic_icon"
+        class="mic_icon"
+      />
+  </div>
+
+  <!-- Category filter buttons -->
+  <div class="category" role="toolbar" aria-label="Filter coffees">
+    <button class="filter_btn active1" data-filter="all">All</button>
+    <button class="filter_btn active1" data-filter="best-seller">Best Seller</button>
+    <button class="filter_btn active1" data-filter="beans">Coffee Beans</button>
+    <button class="filter_btn active1" data-filter="hot">Hot Drinks</button>
+    <button class="filter_btn active1" data-filter="ice">Cold Drinks</button>
+  </div>
+
+
+  <!-- Coffee Menu -->
+  <h2>Coffee Beans</h2>
+  <section class="menu_container">
+
+    <!-- Card 1 -->
+    <div class="coffee_card" data-category="best-seller beans">
+      <img src="Arabica.png" class="card_img" alt="Arabica Coffee Bean">
+            
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Arabica</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="price"><b>Price : $30</b></p>
+        <p><b>Taste:</b> Smooth, sweet, with hints of fruit and sugar</p>
+        <p><b>Best Brewing: </b>Pour-over or drip to highlight delicate flavors.</p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="coffee_card" data-category="best-seller beans">
+      <img src="Robusta.png" class="card_img" alt="Robusta Coffee Bean">
+            
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Robusta</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="price"><b>Price : $30</b></p>
+        <p><b>Taste: </b>Strong, bold, earthy, with higher caffeine</p>
+        <p><b>Best Brewing: </b>Espresso or French press for rich intensity</p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="coffee_card" data-category="beans">
+      <img src="Liberica.png" class="card_img" alt="Liberica Coffee Bean">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Liberica</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <p class="price"><b>Price: $30</b></p>
+        <p><b>Taste: </b>Unique, smoky, floral aroma with fruity, woody flavors</p>
+        <p><b>Best Brewing: </b>French press or pour-over to capture complex flavors</p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="coffee_card" data-category="beans">
+      <img src="Excelsa.png" class="card_img" alt="Excelsa Coffee Bean">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Excelsa</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p class="price"><b>Price: $30</b></p>
+        <p><b>Taste: </b>Tart, fruity, with dark roasty undertones</p>
+        <p><b>Best Brewing: </b>Espresso or drip to balance tartness and depth</p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="coffee_card" data-category=" beans">
+      <img src="ethiopian.png" class="card_img" alt="Ethiopian Yirgiacehic Coffee Bean">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Ethiopian Yirgiacehic</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p class="price"><b>Price: $25</b></p>
+        <p><b>Taste: </b>Bright, floral, tea-like with citrus and berry notes</p>
+        <p><b>Best Brewing: </b>Pour-over or Chemex to highlight delicate flavors</p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <h2>Hot Drinks</h2>
+  <section class="menu_container">
+
+    <!-- Hot Coffee Card 1 -->
+    <div class="coffee_card" data-category="hot best-seller">
+      <img src="cappuccino.png" class="card_img" alt="Cappuccino">
+
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+          <h2>Cappuccino</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p class="price"><b>Price : $15</b></p>
+          <p>
+            A timeless favorite—rich espresso topped with velvety steamed milk and a fluffy milk foam crown. 
+            Balanced, smooth, and perfect for a cozy coffee moment.
+          </p>
+
+            <!-- Increase & Decrease product quantity -->
+              <div class="quantity_controls">
+                <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <span class="count">0</span>
+                <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Hot Coffee Card 2 -->
+    <div class="coffee_card" data-category="hot best-seller">
+      <img src="espresso.png" class="card_img" alt="Espresso">
+
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+          <h2>Espresso</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <p class="price"><b>Price : $10</b></p>
+          <p>
+            Pure, bold, and intense. 
+            A concentrated shot of rich coffee flavor that’s the foundation of 
+            all specialty drinks—ideal for true coffee lovers.
+          </p>
+
+            <!-- Increase & Decrease product quantity -->
+              <div class="quantity_controls">
+                <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <span class="count">0</span>
+                <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Hot Coffee Card 3 -->
+    <div class="coffee_card" data-category="hot">
+      <img src="latte.png" class="card_img" alt="Latte">
+
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+          <h2>Latte</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <p class="price"><b>Price : $15</b></p>
+          <p>
+            Smooth and creamy—freshly pulled espresso blended with steamed milk and topped 
+            with a light layer of foam. A warm, 
+            comforting classic for everyday enjoyment.
+          </p>
+
+            <!-- Increase & Decrease product quantity -->
+              <div class="quantity_controls">
+                <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <span class="count">0</span>
+                <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <h2>Cold Drinks</h2>
+  <section class="menu_container">
+
+    <!-- Card 1 -->
+    <div class="coffee_card" data-category="ice best-seller">
+      <img src="mocha.png" class="card_img" alt="Ice Mocha">
+            
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Ice Mocha</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="price"><b>Price : $15</b></p>
+        <p>
+          A delicious blend of rich espresso, creamy milk, and smooth chocolate, served over ice. 
+          Perfect for those who love coffee with a sweet, indulgent twist.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="coffee_card" data-category="ice best-seller">
+      <img src="ice_americano.png" class="card_img" alt="Ice Americano">
+            
+      <span class="badge">Best Seller</span>
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Ice Americano</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="price"><b>Price : $18</b></p>
+        <p>
+          Simple and refreshing—bold espresso poured over cold water and ice. 
+          A light, crisp coffee drink with a clean finish, perfect for hot days.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="coffee_card" data-category="ice">
+      <img src="ice_latte.png" class="card_img" alt="Ice Latte">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Brown Sugar Latte</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <p class="price"><b>Price: $18</b></p>
+        <p>
+          Cool, smooth, and creamy. 
+          Freshly brewed espresso balanced with chilled milk and ice, 
+          offering a refreshing take on the classic latte.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="coffee_card" data-category="ice">
+      <img src="dalgona_coffee.png" class="card_img" alt="Dalgona Coffee">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Dalgona Coffee</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p class="price"><b>Price: $15</b></p>
+        <p>
+          A whipped coffee delight! Frothy, sweet coffee cream layered over cold milk and ice. 
+          Both trendy and tasty, it’s a treat for the eyes and the taste buds.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="coffee_card" data-category="ice">
+      <img src="frappuccino.png" class="card_img" alt="Frappuccino">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Frappuccino</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p class="price"><b>Price: $12</b></p>
+        <p>
+          A cool and creamy coffee treat! Blended with ice, milk, 
+          and espresso for a smooth, frosty texture—topped with whipped cream for 
+          the perfect balance of sweetness and refreshment.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="coffee_card" data-category="ice">
+      <img src="ice_cappuccino.png" class="card_img" alt="Ice Cappuccino">
+
+      <button class="fav"><i class="fa-regular fa-heart"></i></button>
+
+      <div>
+        <h2>Ice Cappuccino</h2>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p class="price"><b>Price: $12</b></p>
+        <p>
+          A refreshing twist on the classic favorite. 
+          Chilled espresso mixed with cold milk and topped with a layer of creamy foam—smooth, bold, 
+          and perfectly balanced for warm days.
+        </p>
+
+          <!-- Increase & Decrease product quantity -->
+            <div class="quantity_controls">
+              <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              <span class="count">0</span>
+              <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+          <button class="add_to_cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Video Section -->
+    <h2 class="video_header">Discover Coffee & Our Body</h2>
+      <div class="video_container">
+        <iframe 
+          src="https://www.youtube.com/embed/62wEk02YKs0" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer_container">
+      <div>
+        <a href="index.html">
+          <img src="logo1.png" alt="Bean Boutique Logo" class="logo">
+        </a>
+
+        <!-- About Bean Boutique -->
+        <p>Since 2006</p>
+        <p>High quality beans, expert roasting, luxury taste.</p>
+        <p><b>Follow us on:</b></p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/beanboutique/html/home.html">Home</a></li>
+          <li><a href="/beanboutique/html/coffeeselection.html">Coffee</a></li>
+          <li><a href="/beanboutique/html/equipment.html">Brewing Equipments</a></li>
+          <li><a href="/beanboutique/html/events.html">Events</a></li>
+          <li><a href="/beanboutique/html/offers.html">Special Offers</a></li>
+          <li><a href="/beanboutique/html/cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Coffee St, Caffeine City, CA 12345<br></p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa-regular fa-envelope"></i> Email: cafe@beanboutique.com </p>
+      </div>
+
+      <div>
+        <!-- Google Map -->
+        <h3>How to find us:</h3>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.388989242893!2d77.21894832088265!3d28.633699314132947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdf5978f867d%3A0x33516f1667b6c62e!2sBean%20Boutique!5e0!3m2!1sen!2smm!4v1759051146571!5m2!1sen!2smm"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+  
+  <script src="coffee.js"></script>
+  
+</body>
+</html>

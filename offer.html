@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="shortcut icon" href="coffee_bean.png" type="image/x-icon">
+    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header + Navigation -->
+  <header class="navbar">
+      
+      <!-- Logo with link to Home -->
+      <a href="index.html">
+        <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+      </a>
+
+      <!-- HAMBURGER BUTTON (paste inside .navbar, after the logo) -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <!-- Navigation Menu -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="#" class="active">Offers</a></li>
+          <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart </a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="main_header">Special Offers</h1>
+      <p class="main_para">
+        Discover our exclusive deals and promotions on premium coffee blends and brewing equipment.
+      </p>
+
+      <div class="offer_container">
+
+        <!-- Offer Card 1 -->
+        <div class="offer_card">
+          <img src="promotion1.png" alt="promotion image">
+
+          <div class="offer_details">
+            <h2>Buy One Get One Promotion</h2>
+            <p>Enjoy our special offer on selected coffee blends.</p>
+            <p>Buy one bottle & get another one free!</p>
+            <p><b>-- Only from 21 to 25 DEC --</b></p>
+
+            <div class="shop_now">
+              <a href="coffeeselection.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offer Card 2 -->
+        <div class="offer_card">
+          <img src="promotion3.png" alt="promotion image">
+
+          <div class="offer_details">
+            <h2>NEW YEAR PROMOTION</h2>
+            <h3>20% Off on All Products</h3>
+            <p>Use code: NEWYEAR20 at checkout.</p>
+            <p><b>-- Only from 1 to 10 JAN --</b></p>
+
+            <div class="shop_now">
+              <a href="coffeeselection.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offer Card 3 -->
+        <div class="offer_card">
+          <img src="promotion2.png" alt="promotion image">
+
+          <div class="offer_details">
+            <h2>Free Shipping on Orders Over $50</h2>
+            <p>Enjoy free shipping on all orders over $50.</p>
+            <p>Stock up on your favorite coffee blends and brewing equipment.</p>
+
+            <div class="shop_now">
+              <a href="coffeeselection.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Subscription Plan -->
+      <h2>CHOOSE YOUR PLAN</h2>
+      <!-- Plan 1 : Basic-->
+      <div class="plan_container">
+        <div class="plan_card">
+          <h2>Basic Plan</h2>
+          <p>$20/month</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i>2 bags of coffee</li>
+            <li><i class="fa-solid fa-circle-check"></i>50% delivery fees</li>
+            <li><i class="fa-solid fa-circle-check"></i>Access to exclusive blends</li>
+            <li><i class="fa-solid fa-circle-check"></i>Monthly brewing tips</li>
+
+
+          </ul>
+          <button class="select_plan">Select Plan</button>
+        </div>
+
+        <!-- Plan 2 : Standard-->
+        <div class="plan_card">
+          <h2>Standard Plan</h2>
+          <p>$35/month</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i>4 bags of coffee</li>
+            <li><i class="fa-solid fa-circle-check"></i>Free delivery</li>
+            <li><i class="fa-solid fa-circle-check"></i>Access to exclusive blends</li>
+            <li><i class="fa-solid fa-circle-check"></i>Monthly brewing tips</li>
+
+          </ul>
+          <button class="select_plan">Select Plan</button>
+        </div>
+
+        <!-- Plan 3 : Premium-->
+        <div class="plan_card">
+          <h2>Premium Plan</h2>
+          <p>$50/month</p>
+          
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i>VIP card</li>
+            <li><i class="fa-solid fa-circle-check"></i>6 bags of coffee</li>
+            <li><i class="fa-solid fa-circle-check"></i>Free delivery & shipping</li>
+            <li><i class="fa-solid fa-circle-check"></i>Access to exclusive blends</li>
+            <li><i class="fa-solid fa-circle-check"></i>Monthly brewing tips</li>
+            <li><i class="fa-solid fa-circle-check"></i>Exclusive merchandise</li>
+            <li><i class="fa-solid fa-circle-check"></i>Early access to new products</li>
+            
+          </ul>
+          <button class="select_plan">Select Plan</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer_container">
+      <div>
+        <a href="/index.html">
+          <img src="logo1.png" alt="Bean Boutique Logo" class="logo">
+        </a>
+        <p>Since 2006</p>
+        <p>High quality beans, expert roasting, luxury taste.</p>
+        <p><b>Follow us on:</b></p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="equipment.html">Brewing Equipments</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="offer.html">Special Offers</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Coffee St, Caffeine City, CA 12345<br></p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa-regular fa-envelope"></i> Email: cafe@beanboutique.com</p>
+      </div>
+
+      <div>
+        <!-- Google Map -->
+        <h3>How to find us:</h3>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.388989242893!2d77.21894832088265!3d28.633699314132947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdf5978f867d%3A0x33516f1667b6c62e!2sBean%20Boutique!5e0!3m2!1sen!2smm!4v1759051146571!5m2!1sen!2smm"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

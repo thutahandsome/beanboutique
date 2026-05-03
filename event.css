@@ -1,0 +1,323 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading 2 & Paragraph */
+.main_header, .main_p, .form_header, .form_p{
+  text-align: center;
+  color: #4e342e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for main top title of the page */
+.main_header {
+  font-size: 2.2rem;
+  margin: 40px 0 20px 0;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* Styling for event section */
+.event_section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 10%;
+}
+
+.event_section p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* styling for each event card */
+.event_div {
+  display: flex;
+  border: 3px solid #4e342e;
+  border-radius: 20px;
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* event images style */
+.event_div img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-info h2 {
+  color: #4e342e;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for event information */
+.event-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Styling for Register Form */
+.register_form {
+  display: none;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  box-shadow: rgba(12,18,30,0.1) 0px 2px 4px;
+}
+
+/* Styling for Register button in the Event */
+.register_button_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  border: 2px solid #4e342e;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+}
+
+/* hover style for register button on the form */
+.register_button_div:hover {
+  background-color: #4e342e;
+  color: #fff;
+}
+
+.register_button_div a {
+  font-size: 1.2rem;
+  color: var(--brown1);
+  transition: color 0.3s;
+}
+
+/* Hide form by default */
+.form_container {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form content box */
+.form_content {
+  background-color: #fff;
+  margin: auto;
+  width: 50%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button (X) */
+.close {
+  color: #4e342e;
+  float: right;
+  margin-top: -25px;
+  margin-right: -13px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
+  outline: none;
+}
+
+/* overwrite default style for hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin: 20px 0;
+}
+
+/* Styling for register and clear button */
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+/* styling for register submit button on the form*/
+.registerbtn {
+  background-color: #4e342e;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.registerbtn:hover {
+  opacity: 0.8;
+}
+
+/* Styling for confirmation message container */
+.success_message {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling for clear button */
+.clearbtn {
+  background-color: #cdc8c8;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 0.3;
+  font-size: 1rem;
+}
+
+.clearbtn:hover {
+  background-color: #b3b0b0;
+}
+
+/* Styling for Previous Events section */
+.previous_div{
+  display: flex;
+  margin: auto;
+  bottom: 30px;
+}
+
+/* styles for previous events' images */
+.previous_div img{
+  padding: 10px;
+  width: 350px;
+}
+
+.previous_event{
+  border: 2px solid;
+  margin: 20px auto 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.previous_event h2{
+  color: #4e342e;
+  text-align: center;
+}
+
+.previous_event p{
+  text-align: center;
+}
+
+/* hover style for previous event */
+.previous_event:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= Responsive Design ================= */
+@media (max-width: 1000px) {
+  .event_div {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .event_div img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+  }
+  .event-info h2, .event-info p {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  img{
+    margin: auto;
+  }
+
+  .previous_div{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .form_content {
+    width: 90%;
+    padding: 20px;
+  }
+  .register_button_div {
+    width: 90%;
+    height: 50px;
+  }
+  .event_section {
+    margin: 0 5%;
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  h2 { font-size: 1.5rem; }
+  input[type=text], input[type=email], input[type=tel] {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  .registerbtn, .clearbtn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

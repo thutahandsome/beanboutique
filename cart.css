@@ -1,0 +1,296 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for all heading 2 used in cart*/
+h2{
+  color: #59382f;
+  text-align: center;
+  margin: 32px 0 16px 0;
+  font-size: 30px;
+}
+
+.main_title{
+  color: #59382f;
+}
+
+/* Styling for paragraph */
+.main_p{
+  color: #7a6a64;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Styling for back to shop container */
+.back_to_shop {
+  margin: 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* styling for back to shop link */
+.back_to_shop a{
+  background-color: #3b2b26;
+  padding: 8px 12px;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+/* back to shop link hover style */
+.back_to_shop a:hover {
+  background-color: #59382f;
+  transition: 0.3s;
+}
+
+/* styling for cart table to visible items*/
+#cart_table{
+  width: 70%;
+  margin: 32px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+#cart_table th, #cart_table td{
+  padding: 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#cart_table th{
+  background-color: #f4f4f4;
+}
+
+
+/* Order Summary card styles */
+.order-summary-card {
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  padding: 18px;
+  max-width: 360px;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.order-summary-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  color: #3b2b26;
+}
+
+.summary-row {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(59,43,38,0.06);
+  color: #3b2b26;
+}
+
+.summary-row.items-row {
+  font-weight: 500;
+}
+
+.summary-row.total-row {
+  border-bottom: none;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+/* ---- Styling for coupon code filling area ---- */
+.coupon-area { margin-top: 12px; }
+
+.coupon-row {
+  display:flex;
+  gap:8px;
+  margin-top: 6px;
+}
+
+.coupon-row input[type="text"]{
+  flex:1;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  outline:none;
+}
+
+.coupon-row input[type="text"]:focus{
+  border-color:#b58a78;
+  box-shadow:0 0 0 3px rgba(181,138,120,0.06);
+}
+
+.coupon-row button#apply_coupon_btn{
+  padding:8px 12px;
+  background:#6c6c6c;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.coupon-row button#apply_coupon_btn:hover{ opacity:0.95; }
+
+.coupon-note{
+  margin-top:8px;
+  font-size:13px;
+  color:#7a6a64;
+  min-height:18px;
+}
+
+/* Checkout button */
+.checkout-btn{
+  margin-top:14px;
+  width:100%;
+  padding:10px 12px;
+  background:#59382f;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.checkout-btn:hover { opacity:0.95; }
+
+/* Layout: put cart table and order-summary side-by-side on wide screens */
+main section {
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+/* Make responsive: stack on small screens */
+@media (max-width: 880px) {
+  main section { flex-direction: column; }
+  .order-summary-card { margin-left: 0; max-width: 100%; }
+}
+
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: -300px; /* off-screen */
+  background: #59382f;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  right: 20px;  /* slide into view */
+  opacity: 1;
+}
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none; /* hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup box */
+.popup-box {
+  background: white;
+  padding: 10px 10px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 700px;
+  width: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: popupIn 0.3s ease;
+}
+
+@keyframes popupIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.fa-solid .fa-circle-check {
+  font-size: 50px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.popup-box h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+#closePopupBtn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Emoji rating styles */
+.feedback-container {
+  background-color: #fff;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Styling for emojis: smile, angry, laugh.... */
+.emoji-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.far {
+  margin: 1px;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+
+/* Styling for rating (star) */
+.rating-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+}
+
+/* Star icons styles */
+.fa-star {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.fa-star.active {
+  color: gold;
+}

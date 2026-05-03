@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="shortcut icon" href="/Assignment/Images/coffee_bean.png" type="image/x-icon">
+    <link rel="stylesheet" href="equipment.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header + Navigation -->
+    <header class="navbar">
+      <!-- Logo with link to Home -->
+      <a href="index.html">
+        <img src="logo.png" alt="Bean Boutique Logo" class="logo">
+      </a>
+
+      <!-- HAMBURGER BUTTON (paste inside .navbar, after the logo) -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+        
+        <nav id="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+                <li><a href="coffeeselection.html">Coffee</a></li>
+                <li><a href="#" class="active">Equipment</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="offer.html">Offers</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Animated Search Bar -->
+    <div class="search_bar_container active">
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+        alt="magnifier"
+        class="magnifier"
+      />
+      
+      <input type="text" class="input" placeholder="Search ..." />
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+        alt="mic_icon"
+        class="mic_icon"
+          />
+    </div>
+
+    <div class="machines_banner">
+      <img src="morning_coffee_machine.png" alt="Machines Collection" class="machines_collection">
+
+      <img src="machines_collection.png" alt="Machines Collection" class="machines_collection">
+
+      <img src="espresso_machine.png" alt="Machines Collection" class="machines_collection">
+    </div>
+
+
+    <!-- Brewing Machines Catalogues -->
+    <section class="equipments_container">
+
+      <!-- Card 1 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="barista_pro.png" alt="Barista Pro Image" class="default_img cart_img" >
+          <img src="barista_pro1.png" alt="Barista Pro Image" class="hover_img" >
+        </div>
+
+        <span class="badge">SALE</span>
+
+        <div class="equipment_info">
+          <h2>Barista Pro</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+          <p><b class="normal_price">Price: $100</b></p>
+          <p class="price"><b>Price: $80</b></p>
+          
+          <p class="description">Bring the café experience home with the Barista Pro. 
+            Featuring advanced brewing technology and precise temperature control, 
+            this machine lets you craft americano, cappuccinos, and lattes with barista-level quality.
+          </p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="french_press.png" alt="French Press" class="default_img">
+          <img src="french_press1.png" alt="French Press" class="hover_img">
+        </div>
+
+        <div class="equipment_info">
+          <h2>Classic French Press</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+          <p class="price"><b>Price : $50</b></p>
+          <p class="description">Brew rich, full-bodied coffee with our classic French Press. 
+            Simple to use and perfect for bringing out natural oils and flavors, 
+            it’s ideal for anyone who loves a smooth and aromatic cup.</p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="electric_coffee_maker.png" alt="Electric Coffee Maker" class="default_img">
+          <img src="electric_coffee_maker1.png" alt="Electric Coffee Maker" class="hover_img">
+        </div>
+
+        <div class="equipment_info">
+          <h2>Electric Coffee Maker</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+
+          <p class="price"><b>Price : $50</b></p>
+          <p class="description">Enjoy effortless brewing with our reliable Electric Coffee Maker. 
+            With a sleek design and fast operation, 
+            it’s perfect for busy mornings—just press a button and savor freshly brewed coffee anytime.
+          </p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+        
+      </div>
+
+      <!-- Card 4 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="coffee_grinder.png" alt="Coffee grinder" class="default_img card_img">
+          <img src="coffee_grinder1.png" alt="Coffee Grinder" class="hover_img">
+        </div>
+
+        <div class="equipment_info">
+          <h2>Coffee Grinder</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+
+          <p class="price"><b>Price : $50</b></p>
+          <p class="description">Unlock the freshest flavor with our Coffee Grinder. 
+            Adjustable grind settings allow you to choose from fine to coarse, 
+            ensuring the perfect grind for your favorite brewing method.
+          </p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+        
+      </div>
+
+      <!-- Card 5 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="morning_coffee_machine.png" alt="Morning Coffee Machine image" class="default_img">
+          <img src="morning_coffee_machine2.png" alt="Morning Coffee Machine image" class="hover_img" >
+        </div>
+
+        <div class="equipment_info">
+          <h2>Morning Coffee Machine</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+
+          <p class="price"><b>Price : $50</b></p>
+          <p>
+            Start your day the easy way with the Morning Coffee Machine. 
+            Designed for convenience and consistency, it brews a hot, 
+            flavorful cup at the push of a button—perfect for busy mornings when you need energy fast.
+          </p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+        
+      </div>
+
+      <!-- Card 6 -->
+      <div class="equipment_card">
+        <div class="equipment_img">
+          <img src="espresso_machine.png" alt="Espresso Machine image" class="default_img">
+          <img src="espresso_machine2.png" alt="Espresso Machine image" class="hover_img" >
+        </div>
+
+        <div class="equipment_info">
+          <h2>Espresso Machine</h2>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+
+          <p class="price"><b>Price : $50</b></p>
+          <p>
+            Brew café-quality espresso right at home with our Espresso Machine. 
+            Designed for precision and performance, it delivers rich, 
+            aromatic shots with a perfect crema every time—ideal for crafting your favorite cappuccinos, 
+            lattes, and more.
+          </p>
+          
+          <button class="add_to_cart">Add to Cart</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Footer -->
+  <footer>
+
+    <div class="footer_container">
+      <div>
+        <a href="index.html">
+          <img src="logo1.png" alt="Bean Boutique Logo" class="logo">
+        </a>
+
+        <!-- About Bean Boutique -->
+        <p>Since 2006</p>
+        <p>High quality beans, expert roasting,</p>
+        <p>luxury taste</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="equipment.html">Brewing Equipments</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="offer.html">Special Offers</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Coffee St, Caffeine City, CA 12345<br></p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa-regular fa-envelope"></i> Email: cafe@beanboutique.com</p>
+      </div>
+
+      <div>
+        <!-- Google Map -->
+        <h3>How to find us:</h3>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.388989242893!2d77.21894832088265!3d28.633699314132947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdf5978f867d%3A0x33516f1667b6c62e!2sBean%20Boutique!5e0!3m2!1sen!2smm!4v1759051146571!5m2!1sen!2smm"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <script src="equipment.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
